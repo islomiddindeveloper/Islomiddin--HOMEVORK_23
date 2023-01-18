@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <title>GiridWOrsk</title>
+      <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+
+<body>
+      <div>
+            <header class="col-12">
+                  <div class="container">
+                        <nav
+                              class="navbar navbar-expand-lg navbar-light navbar-top bg-light fs--1 fixed-top d-flex flex-row py-0 pl-0">
+                              <div class="container-fluid ">
+                                    <div class="navbar-brand navbar-brand-custom">
+                                          <div class="logo-icon">
+                                                <span class="uil uil-apps text-light fs--1"></span>
+                                          </div>
+                                          <span class="text-light m-lg-2 fs-1"><strong>Grid</strong>Works</span>
+                                    </div>
+                                    <div class="collapse navbar-collapse align-items-center justify-content-between">
+                                          <ul class="navbar-nav align-items-center">
+                                                <li class="nav-item">
+                                                      <img src="images/user-icon.png" alt="user-icon" />
+                                                </li>
+                                                <li class="nav-item">
+                                                      <a class="nav-link px-0" href="#"><span
+                                                                  class="uil uil-twitter fs-2"></span></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                      <a class="nav-link px-0" href="#"><span
+                                                                  class="uil uil-facebook-f fs-2"></span></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                      <a class="nav-link px-0" href="#"><span
+                                                                  class="uil uil-instagram-alt fs-2">
+                                                            </span></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                      <a class="nav-link px-0" href="#"><span
+                                                                  class="uil uil-google-drive fs-2"></span></a>
+                                                </li>
+                                          </ul>
+                                          <form action="#" class="form-inline">
+                                                <div class="input-group-icon">
+                                                      <span class="uil uil-envelope fs-2"></span>
+                                                      <input class="form-control form-control-lg input-box" type="email"
+                                                            placeholder="Email Address" aria-label="Email" />
+                                                </div>
+                                                <button class="btn btn-light btn-lg border-primary text-primary"
+                                                      type="submit">
+                                                      Stay Updated
+                                                </button>
+                                          </form>
+                                    </div>
+                              </div>
+                              <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbar-vertical-collapse" aria-controls="navbar-vertical-collapse"
+                                    aria-expanded="true" aria-label="Toggle navigation" onclick="navToggle()">
+                                    <span class="navbar-toggler-icon"></span>
+                              </button>
+
+                              <!-- <div id="top-nav">
+                              <div id="responsive-nav"
+                                    class="collapse navbar-collapse align-items-center d-flex bg-white py-2 px-3 flex-wrap justify-content-between">
+                                    <ul class="navbar-nav align-items-center flex-row">
+                                          <li class="nav-item">
+                                                <img src="images/user-icon.png" alt="user-icon" />
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link px-0" href="#"><span
+                                                            class="uil uil-twitter fs-2"></span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link px-0" href="#"><span
+                                                            class="uil uil-facebook-f fs-2"></span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link px-0" href="#"><span
+                                                            class="uil uil-instagram-alt fs-2">
+                                                      </span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link px-0" href="#"><span
+                                                            class="uil uil-google-drive fs-2"></span></a>
+                                          </li>
+                                    </ul>
+                                    <form action="#" class="form-inline flex-wrap">
+                                          <div class="input-group-icon">
+                                                <span class="uil uil-envelope fs-2"></span>
+                                                <input class="form-control form-control-lg input-box" type="email"
+                                                      placeholder="Email Address" aria-label="Email" />
+                                          </div>
+                                          <button class="btn btn-light btn-lg border-primary text-primary"
+                                                type="submit">
+                                                Stay Updated
+                                          </button>
+                                    </form>
+                              </div>
+                              <div id="responsive-nav" class="navbar-collapse bg-white">
+                                    <ul
+                                          class="navbar-nav navbar-nav-v flex-row flex-wrap bg-white justify-content-between px-3">
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="index.html"><span
+                                                            class="icons fs-3 uil uil-home"></span><span class="fs--1">
+                                                            Home</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#modal-services" data-toggle="modal"><span
+                                                            class="icons fs-3 uil uil-bolt"></span><span class="fs--1">
+                                                            Services</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#modal-contacts" data-toggle="modal"><span
+                                                            class="icons fs-3 uil uil-phone"></span><span class="fs--1">
+                                                            Contacts</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#modal-components" data-toggle="modal"><span
+                                                            class="icons fs-3 uil uil-cog"></span><span class="fs--1">
+                                                            Components</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#modal-utilities" data-toggle="modal"><span
+                                                            class="icons fs-3 uil uil-wrench"></span><span
+                                                            class="fs--1">
+                                                            Utilities</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#modal-documentation"
+                                                      data-toggle="modal"><span
+                                                            class="icons fs-3 uil uil-clipboard-notes"></span><span
+                                                            class="fs--1"> Documentation</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#modal-demo" data-toggle="modal"><span
+                                                            class="icons fs-3 uil uil-fire"></span><span class="fs--1">
+                                                            Features</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#modal-demo" data-toggle="modal"><span
+                                                            class="icons fs-3 uil uil-shopping-bag"></span><span
+                                                            class="fs--1"> Cart</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#modal-demo" data-toggle="modal"><span
+                                                            class="icons fs-3 uil uil-pen"></span><span class="fs--1">
+                                                            Blog</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#modal-demo" data-toggle="modal"><span
+                                                            class="icons fs-3 uil uil-flower"></span><span
+                                                            class="fs--1">
+                                                            About</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#modal-demo" data-toggle="modal"><span
+                                                            class="icons fs-3 uil uil-swatchbook"></span><span
+                                                            class="fs--1">
+                                                            Portfolio</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#modal-demo" data-toggle="modal"><span
+                                                            class="icons fs-3 uil uil-usd-circle"></span><span
+                                                            class="fs--1">
+                                                            Pricing</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#modal-demo" data-toggle="modal"><span
+                                                            class="icons fs-3 uil uil-unlock"></span><span
+                                                            class="fs--1">
+                                                            Terms</span></a>
+                                          </li>
+                                          <li class="nav-item">
+                                                <a class="nav-link" href="#modal-demo" data-toggle="modal"><span
+                                                            class="icons fs-3 uil uil-comment-dots"></span><span
+                                                            class="fs--1"> Support</span></a>
+                                          </li>
+                                    </ul>
+                                    <a class="footer-text order-2 order-md-0" href="https://themewagon.com/">Made with
+                                          <span class="mx-1 uil uil-heart-alt fs-1 text-info"></span>by
+                                          ThemeWagon
+                                    </a>
+                              </div>
+                        </div> -->
+                        </nav>
+                  </div>
+            </header>
+            <div class=" row cool-12 mt-5">
+                  <aside style="height: 90vh; overflow-y: scroll;"
+                        class="col-2 pt-3 text-center ps-4  .bg-body-tertiary mt-5   ">
+                        <ul class="row list list-unstyled overflow-x-hidden">
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                              <li class="col-6">
+                                    <div class="p-4 bg-warning border my-2">card</div>
+                              </li>
+                        </ul>
+                  </aside>
+                  <main style="height: 90vh; overflow-y: scroll;" class="col-10 pt-3 ps-2 .bg-body-tertiary mt-5">
+                        <ul class="row list list-unstyled">
+                              <li class="col-4 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-4 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-4 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-8 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-4 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-6 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-6 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-8 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-4 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-6 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-6 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-8 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-4 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-4 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-4 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                              <li class="col-4 p-0  card-list">
+                                    <div class="card-item"><img src="./images/bg_img.png" width="510px" alt=""></div>
+                                    <div class="bg-color"></div>
+                              </li>
+                        </ul>
+                  </main>
+            </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
